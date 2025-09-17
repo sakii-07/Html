@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		.form{
+			box-shadow: 0 0 30px 0 black;
+			padding: 50px;
+			width: 50%;
+			text-align: left;
+/*			background-image: url(book.jpeg);*/
+			margin: auto;
+			margin-top: 100px;
+		}
+		input{
+			display: inline-block;
+			font-size: 15px;
+			width: 200px;
+			border: 1px solid black;
+			padding: 3px;
+			border-radius: 10px;
+		}
+		label{
+			display: inline-block;
+			font-size: 20px;
+			color: black;
+			margin: 3px;
+		}
+		button{
+          	width: 100px;
+          	height: 30px;
+          	color: black;
+          	border: 0px solid black;
+          	margin-left: 50px;
+          	background: #12b2f4;
+          	border-radius: 8px;
+          	margin-top: 20px;
+          }
+          .box{
+          	display: inline-block;
+          }
+	</style>
+</head>
+<body>
+
+	<form class="form">
+		<label>Username :</label>
+		<input type="text" placeholder="Enter Username" name="">
+		<label>Email :</label>
+		<input type="Email" placeholder="Enter Email" name="">
+		<label>Password :</label>
+		<input type="Password" placeholder="Enter Password" name="">
+		<div class="box">
+			<label class="lable1">Confirm Password :</label>
+		    <input type="Password" placeholder="Confirm Password" name="">
+		</div>
+		<div>
+			<label>First name:</label>
+			<input type="text" placeholder="Enter first name" name="">
+			<label>Last name:</label>
+			<input type="text" placeholder="Enter last name" name="">
+			<label>Interests-</label>
+			<input type="text" placeholder="Select Interest" list="datalist" name="">
+			<datalist id="datalist">
+				<option>select Interest</option>
+				<option value="Mystery">Mystery</option>
+				<option value="Motivational">Motivational</option>
+				<option value="Sci-Fi">Sci-Fi</option>
+				<option value="Fantacy">Fantacy</option>
+				<option value="Romance">Romance</option>
+				<option value="Horror">Horror</option>
+				<option value="Biographics">Biographics</option>
+				<option value="Self-help">Self-help</option>
+				<option value="Histery">Histery</option>
+				<option value="Science">Science</option>
+				<option value="Travel">Travel</option>
+				<option value="Picture books">Picture books</option>
+				<option value="Dystopain">Dystopain</option>
+				<option value="contemporary">contemporary</option>
+				<option value="middle grade">middle grade</option>
+			</datalist>
+			<label>Favorite book</label>
+			<input type="text" placeholder="Enter Book Name" name="">
+		</div>
+		    <button>Sign in</button>
+	</form>
+
+</body>
+</html>
